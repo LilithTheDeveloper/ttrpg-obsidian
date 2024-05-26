@@ -1,0 +1,16 @@
+.spellbook {
+    /* background-image: url('Placeholder'); */
+    /* background-size: cover; */
+    color: #660e00;
+    font-size: 1em;
+}
+
+.spellbook blockquote{
+    /* background-image: url('Placeholder'); */
+    /* background-size: cover; */
+    font-family: 'Roboto', serif;
+    font-size: 1.5em;
+    color: #660e00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
