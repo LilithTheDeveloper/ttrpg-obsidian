@@ -7,10 +7,6 @@ This template uses the following plugins:
 - `Dataview` - This plugin allows for javascript to be run in the markdown file. You need to enable javascript and allow inline scripts in the settings. Please be careful with this, as it can be a security risk to run foreign scripts in your vault.
 - `MetaEdit` - This plugin allows for the editing of frontmatter data in the markdown file.
 
-## Themes
-This template uses the following themes:
-- `ITS Theme` - This theme provides the styling for the template.
-
 ```js
 const meta = this.app.plugins.plugins["metaedit"].api; 
 const fm = dv.current().file.frontmatter
