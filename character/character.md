@@ -7,6 +7,24 @@ This template uses the following plugins:
 - `Dataview` - This plugin allows for javascript to be run in the markdown file. You need to enable javascript and allow inline scripts in the settings. Please be careful with this, as it can be a security risk to run foreign scripts in your vault.
 - `MetaEdit` - This plugin allows for the editing of frontmatter data in the markdown file.
 
+
+### Frontmatter
+```markdown
+---
+strength: 12
+dexterity: 14
+constitution: 15
+intelligence: 12
+wisdom: 19
+charisma: 17
+proficiency: 2
+acrobatics: 6
+acrobaticsProficiency: true
+acrobaticsExpertise: true
+---
+```
+
+### DataviewJsBlock
 ```js
 const meta = this.app.plugins.plugins["metaedit"].api; 
 const fm = dv.current().file.frontmatter
@@ -39,6 +57,7 @@ const acrobaticsMod = calcSkillMod(dex, isAcrobaticsProficient, isAcrobaticsExpe
 await setValue("acrobatics", acrobaticsMod)
 ```
 
+### Contents of the File
 ```markdown
 | Skill      | Value | Proficency? | Expertise? |
 | ---------- | ----- | ----------- | ---------- |
